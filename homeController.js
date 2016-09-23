@@ -3,7 +3,6 @@ define([
     'liveFilter'
 ], function (bcApp) {
     bcApp.register.controller('homeCtrl', function ($scope, $window, $http, $rootScope, $routeParams, $location, liveExtraSocket, $filter, bcApi, localStorageService) {
-        if(top.frames['btop']) top.frames['btop'].tabsh("mmain");
         $scope.news = [];
         $scope.load = false;
         $scope.banners = [];
